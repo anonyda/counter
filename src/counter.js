@@ -10,6 +10,9 @@ const increaseCounter = () => {
 const decreaseCounter = () => {
     if(Number(counter.innerHTML) > 0)
         counter.innerHTML = Number(counter.innerHTML) - 1;
+    else{
+        alert("Can't decrement Zero")
+    }
 }
 
 const resetCounter = () => {
